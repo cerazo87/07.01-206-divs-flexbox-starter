@@ -99,40 +99,112 @@ textarea {
 html {
   background-color: #000000;
   height: 100%;
+  width: 100%;
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
+  padding: 0em 2em;
   font-size: 1.25em;
-  height: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  margin-left: 30px;
 }
 
-.wrapper {
-  /*add display:flex and set justify-content to space-between*/
+header {
+  display: flex;
+  width: 100%;
+}
+
+header h1 {
+  color: #FFFFFF;
+  font-size: 3em;
+}
+
+h1 span {
+  color: #3FE0D0;
+  font-weight: bold;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main p {
+  color: #FFFFFF;
+  font-size: 2em;
+}
+
+p span {
+  color: #3FE0D0;
+  font-weight: bold;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+
+.flex-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5em;
+  font-size: 1em;
+  flex-flow: row wrap;
+  border-bottom: 1px solid #808080;
+}
+
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+footer i {
+  padding: 30px 20px 0 0;
+  display: flex;
+}
+
+
+.wrapper { /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
   display: flex;
   justify-content: space-between;
-
-}
-
-.div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #fff;
-  line-height: 1.5em;
-  font-size: 0.75em;
-  background-color: #000000;
-  height: 300px;
-  width: 50%;
-  display: flex;
-  justify-content: center;
   align-items: center;
 
 }
 
-.div-1, .div-2 {
+
+
+#div-1, #div-2 {
   border-right: 1px solid #808080;
 
+}
+
+#div-1 {
+  flex-basis: 400px;
+}
+
+#div-2 {
+  flex-basis: 400px;
+}
+
+#div-3 {
+  flex-basis: 300px;
 }
 
 
